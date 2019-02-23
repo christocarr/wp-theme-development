@@ -28,7 +28,7 @@
   ] );
 
   //setup widget areas
-  function picturesandpaintings_init() {
+  function picturesandpaintings_widgets_init() {
     register_sidebar([
       'name'          => esc_html__( 'Main Sidebar', 'picturesandpaintings' ),
       'id'            => 'main-sidebar',
@@ -39,6 +39,7 @@
       'after_title'   => '</h2>'
     ]);
   }
+  add_action( 'widgets_init', 'picturesandpaintings_widgets_init' );
 
 
 ?>
