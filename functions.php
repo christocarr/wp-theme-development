@@ -27,5 +27,18 @@
     'footer-menu' => esc_html__( 'Footer Menu', 'wpheirarchy' ),
   ] );
 
+  //setup widget areas
+  function picturesandpaintings_init() {
+    register_sidebar([
+      'name'          => esc_html__( 'Main Sidebar', 'picturesandpaintings' ),
+      'id'            => 'main-sidebar',
+      'description'   => esc_html__( 'Add widgets for main sidebar here','picturesandpaintings' ),
+      'before_widget' => '<section class="widget">',
+      'after_widget'  => '</section>',
+      'before_title'  => '<h2 class="widget-title">',
+      'after_title'   => '</h2>'
+    ]);
+  }
+
 
 ?>
