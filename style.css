@@ -18,17 +18,49 @@ body {
   margin: 0;
 }
 
-.site-header{
+.skip-link {
+  display: none;
+}
+
+header {
   background-color: aliceblue;
+  padding: 1em;
+}
+
+.navbar {
+  background-color: aliceblue;
+}
+
+.navbar>.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-brand {
+  flex-direction: column;
 }
 
 nav ul li {
   display: inline;
 }
 
+.site-content {
+  display: flex;
+  width: 90vw;
+  margin: 1em auto;
+}
+
 footer {
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100vw;
-  background-color: darkcyan;
+}
+
+.footer {
+  padding-bottom: 2rem;
+}
+
+.footer.level {
+  margin-bottom: 0;
 }
