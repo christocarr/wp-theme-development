@@ -35,7 +35,7 @@
       'description'   => esc_html__( 'Add widgets for main sidebar here','picturesandpaintings' ),
       'before_widget' => '<section class="widget">',
       'after_widget'  => '</section>',
-      'before_title'  => '<h2 class="widget-title">',
+      'before_title'  => '<h2 class="widget-title subtitle">',
       'after_title'   => '</h2>'
     ]);
   }
