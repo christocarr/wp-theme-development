@@ -6,24 +6,12 @@
 
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-        <article id="post-<?php the_ID(); ?>" <?php post_class();?>>
-          <?php the_title( '<h2>', '</h2>' ); ?>
-          <div class="content-entry">
-            <?php the_content(); ?>
-          </div>
-        </article>
+        <?php get_template_part( 'template-parts/content' ); ?>
       
       <?php endwhile; else: ?>
 
-        <article id="post-<?php the_ID(); ?>" <?php post_class();?>>
+      <?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-          <h2><?php esc_html_e( '404', 'picturesandpaintings' ); ?></h2>
-          <div class="content-entry">
-            <p>
-              <?php esc_html_e( 'Sorry! No content found', 'picturesandpaintings' ); ?>
-            </p>
-          </div>
-        </article>
       <?php endif; ?>
      
     </main>
